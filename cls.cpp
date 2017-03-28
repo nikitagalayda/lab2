@@ -5,17 +5,17 @@
 	    return K; 
 	 }   
 
-      int Cls::getRa()
+      double Cls::getRa()
          {
             return Ra;
 	 } 
       
-      int Cls::getRb()
+      double Cls::getRb()
          {
             return Rb;
 	 }
 
-      void Cls::setval(int x, int y)
+      void Cls::setval(double x, double y)
          {
 	    Ra = x;
 	    Rb = y;

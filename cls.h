@@ -3,12 +3,12 @@ using namespace std;
 class Cls {
    public:
       int getK();
-      int getRa();
-      int getRb();
-      void setval(int x, int y);
+      double getRa();
+      double getRb();
+      void setval(double x, double y);
       int Ra1;
 
    private:
-   int Ra, Rb, K;
+   double Ra, Rb, K;
 };
 

@@ -47,11 +47,12 @@ int main()
                Sb = 1.0;
             }
             outFile << setprecision(0) << fixed;
+	    Ea = (1/(1+(pow(10, (Rb-Ra)/400))));
+	    Eb = (1/(1+(pow(10, (Ra-Rb)/400))));
+	   
 	    Ra = Ra + (K * (Sa - Ea));
 	    Rb = Rb + (K * (Sb - Eb));
             val.setval(Ra, Rb);
-            Ea = (1/(1+(pow(10, (Rb-Ra)/400))));
-	    Eb = (1/(1+(pow(10, (Ra-Rb)/400))));
          outFile << val.getRa() << "\t" << val.getRb() << endl;
          }
 

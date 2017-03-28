@@ -4,7 +4,8 @@
 #include <string> 
 #include <limits>
 #include <iomanip>
-#include "cls.h"
+#include "cls.cpp"
+#include <cmath>
 
 using namespace std;
 
@@ -49,7 +50,8 @@ int main()
 	    Ra = Ra + (K * (Sa - Ea));
 	    Rb = Rb + (K * (Sb - Eb));
             val.setval(Ra, Rb);
-         
+            Ea = (1/(1+(pow(10, (Rb-Ra)/400))));
+	    Eb = (1/(1+(pow(10, (Ra-Rb)/400))));
          outFile << val.getRa() << "\t" << val.getRb() << endl;
          }
 

@@ -1,7 +1,7 @@
 ****DISCLAIMER****
 This assignment was completed with the following assumptions:
 1. By "get", it was assumed as in state the value of the variable.
-2. Ra and Rb values were calculated using integer values, which may result in some lack of precision.
+2. Ra and Rb values were calculated using "double" values.
 
 
 
